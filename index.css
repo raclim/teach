@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#e66465, #9198e5);
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    padding: 1rem;
+    min-height: 85vh;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    text-decoration: white wavy underline;
+    text-align: center;
+}
+
+.workshops__holder {
+    display: flex;
+    justify-content: center;
+}
+
+
+.workshop__item {
+    width: 20%;
+    background-color: #fff;
+    padding: 1rem;
+    border: 0.1rem solid #000;
+    box-shadow: 8px 8px #000;
+    border-radius: 5px;
+}
+
+.workshop__item:hover {
+    width: 20%;
+    background-color: #fff;
+    padding: 1rem;
+    border: 0.2rem dotted #000;
+    box-shadow: 8px 8px #000;
+    border-radius: 5px;
+}
+
+.workshop__img {
+    margin-left: 5%;
+}
+
+.workshop__itemTitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: dotted underline;
+    color: purple;
+}
+
+.workshop__itemTitle:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+.page__holder {
+    background-color: white;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+}
+
+footer {
+    padding-left: 1rem;
+    color: white;
+}
