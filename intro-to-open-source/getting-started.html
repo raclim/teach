@@ -9,32 +9,109 @@
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="../index.css">
     </head>
+
     <main>
-      <header>
-        <nav>
-          <a href="intro.html">Intro</a>
-          <a href="history.html">History</a>
-          <a href="getting-started.html">Getting Started</a>
-          <a href="getting-involved.html">Getting Involved</a>
-          <a href="resources.html">Resources</a>
-        </nav>
-      </header>
+        <header>
+            <h1>Getting Started with Contributing</h1>
+    
+            <nav class="workshop__navigation">
+              <a class="nav__element" href="intro.html">Introduction</a>
+              <a class="nav__element" href="origin.html">Origin</a>
+              <a class="nav__element" href="getting-started.html">Getting Started</a>
+              <a class="nav__element" href="getting-involved.html">Getting Involved</a>
+              <a class="nav__element" href="references-and-resources.html">References and Resources</a>
+            </nav>
+          </header>
 
-      <h1>Getting Started with Open Source Contribution</h1>
       <div class="page__holder">
-        <h2>Where Do I Go First?</h2>
-        <h3>Reading</h3>
-        <p>standard documentation file for open source projects. In a Github repo, this is typically where a visitor to a project should go first.</p>
-        
-        <h3>Contributing</h3>
-        <p>on Github, you can contribute by writing code, contributing documentation, and submitting issues or bugs.  GitHub Issues are built into GitHub and list the title, description, and assignee for an Issue. Other features are included as well, such as designating milestones and creating labels to keep everything in a repository organized.</p>
+        <div class="page__section">
+            <h2>Components of an Open Source Project</h2>
 
-        <h3>Maintaining</h3>
-        <p> two major categories are copyleft and permissive licenses. If no license exists, people cannot assume they can use the project. </p>
-      <!-- <script src="assets/scripts/main.js"></script> -->
+            <h3 class="started__header">Github</h3>
+            <p>On Github, you can contribute by writing code, contributing documentation, and submitting issues or bugs.  GitHub Issues are built into GitHub and list the title, description, and assignee for an Issue. Other features are included as well, such as designating milestones and creating labels to keep everything in a repository organized.</p>
+
+            <h3 class="started__header">README.md</h3>
+            <p>The first place a newcomer to an open source project should typically go first is the README.md file within a Github repository. This file is the standard documentation file for open source projects.</p>
+            <p>Generally, this file contains: a title, description, list of features, instructions on how to use a project, ancillary technologies, and collaborators. A great README would also be nicely formatted and contain visual elements such as a table of contents or images!</p>
+            <p>A README.md is formatted in Markdown, which is a popular with open source projects because it allows rich text formatting that can properly displays bits of code. Github currently uses <a href="https://commonmark.org/">CommonMark</a>, which was created in 2014 to standardize Markdown. Other alternatives, such as HTML, tend to have more powerful text formatting options, but are much more effort to code and less readable.</p>
+
+            <h3 class="started__header">The LICENSE file</h3>
+            <p>The LICENSE file contains information on how the project is licensed to the public, or how it can be used and distributed. It specifies what people can and cannot do with your project, and answers questions such as: Can someone modify your code and distribute it as their own? Can they include your code as a part of their own proprietary project?</p>
+            <p>Publishing a project under an open source license helps encourage the adoption of a standard, and gain the benefits from its ecosystem of its protections and contributors.</p>
+            <p>Two major categories of licenses are <b>copyleft</b> and <b>permissive licenses</b>.</p>
+            <p>Copyleft licenses require that any modified version of an open source project also be released under the same license as the original project. A strong copyleft license requires that any software that uses a project licensed under it must also be licensed in the same way. Weak licenses have no requirements for software that only use the licensed project.</p>
+            <p>Permissive licenses do not put restrictions on peple modifying or redistributing a project. For example, if a private company wanted to fork an open source project, add some proprietary changes, and redistribute the project, this would be within their right as long as the project was under a permissive license.</p>
+            <p>If no license exists, people CANNOT assume they can use a project.</p>
+            <p>If you're trying to choose a license for your own project, <a href="https://choosealicense.com/">Choose A License</a>is a great website to help you narrow down a license.</p>
+
+            <h3 class="started__header">Code of Conduct</h3>
+            <p>A Code of Conduct is a written set of rules and standards for those who interact with a project. Open Source projects can involve many people who might not have the same understanding or perceptions of what constitutes as acceptable conduct on the internet. Having a Code of Conduct formalizes and helps explain the project's policies.</p>
+
+            <h3 class="started__header">Documentation</h3>
+            <p>Documentation for a project entails more in-depth information on how to use or contribute to it, and are mostly written in Markdown. For example, documentation can cover how to setup a local environment, diagrams of the project's infrastructure, or guidelines for providing translations. The quality of a project's documentation can have a huge impact on its success. Clear, detailed, and up-to-date documentation can make it easy for people to use and contribute to an open source project. On the other hand, confusing, out-of-date, or incomplete documentation might cause people to abandon an otherwise awesome project.</p>
+        </div>
+
+        <div class="page__section">
+            <h2>Contributing to an Open Source Project</h2>
+
+            <h3 class="started__header">Creating an Issue</h3>
+            <p>A good issue should be as descriptive as possible. When creating an issue, include version numbers of any relevant software, an explanation of expectations versus the real behavior, and steps to reproduce behavior. If necessary, supplementary media such as links to videos or images could be included as well.</p>
+            <p>If you have any code you need to share, copy and paste it. Do not include screenshots of code, since the code itself cannot be easily accessed from it.</p>
+
+            <h3 class="started__header">Reviewing Contributions</h3>
+            <p>You can review contributions by <b>triaging issues</b>, or adding labels and deleting duplicates. An important label to add is a "Good First Issue", which indicates issues that newcomers could easily work on. </p>
+            <p>You can also review pull requests on Github, and can be assigned or request to be assigned as a reviewer for a certain pull request so you can leave comments or suggestions.</p>
+
+            <h3 class="started__header">Adding Documentation</h3>
+            <p>Make video tutorials, host a workshop, or create examples for the project.</p>
+
+            <h3 class="started__header">Writing a Pull Request</h3>
+            <p>Pull Requests are a feature of Github and other source code management tools that allows a repository's collaborators to review and give feedback on proposed code changes before they are accepted and merged to another branch.</p>
+            <p>Going through the pull request process can increase group knowledge, improve project quality, and develop interpersonal and critical skills through group critique.</p>
+            <p>A good pull request concisely explains the purpose of it through its title and description. If you're creating a pull request, first check if there's a pull request template or guidelines in the documentation. In your pull request, you should describe the thought process behind your code changes and the options you have considered in your description. Including screenshots, GIFs, or videos can also help others visualize your changes.</p>
+            <p>Your pull request should also reflect your coding process through clear commit messages and any relevant comments in the code. Ideally, all of your code should be specific to the issue you're working on and not include any unrelated changes.</p>
+
+            <h3 class="started__header">Contributing Code</h3>
+            <p>Contributing code is a more in-depth process that may vary depending on the project. If it's your first time getting started, it's recommended to look at issues labeled "Good First Issue".</p>
+            <p>Here is a loose overview detailing steps of what the code contribution process may look like:</p>
+            <ul>
+                <li>Creating a local copy of the project.</li>
+                <li>Browsing issues on Github.</li>
+                <li>Planning any relevant material.</li>
+                <li>Creating a seprate, forked branch.</li>
+                <li>Adding your changes.</li>
+                <li>Committing the changes.</li>
+                <li>Pushing the changes.</li>
+                <li>Creating a Pull Request.</li>
+                <li>Revising your pull request based on feedback.</li>
+            </ul>
+
+
+            <h3 class="started__header">Getting Involved with the Community</h3>
+            <p>To get involved with the community, look at their website, social media, discourse forums, and in-person events.</p>
+            
+        </div>
+
+        <div class="page__section">
+            <h2>Receiving Rejection</h2>
+            <p>Rejection is a natural part of the open source experience. No matter how hard we work on a contribution, the maintainers of the project may still reject it.</p>
+            <p>If this happens to you, remember that it isn’t personal. It’s the maintainer’s job to do what they think is best for the project. You can use their feedback to create a stronger contribution in the future, or try working on a different project. There are many open source projects out there waiting for your help.</p>
+        </div>
+
+        <div class="page__section">
+            <h2>Let's Try It Out!</h2>
+            <p>To practice what we learned above, review this website: <a href="https://raclim.cool/customize-a-carrot/index.html">Customize A Carrot</a>.</p>
+            <p>After reviewing this website, brainstorm some issues or suggestions and head over to <a href="https://github.com/raclim/customize-a-carrot">Customize a Carrot's Github Repository</a>. Using the steps above, you can try to contribute to this repository by opening an issue. If you are already familiar with the process, try cloning the repository, making some changes, and creating a pull request!</p>
+        </div>
     </main>
-  <footer>
-    <a href="../index.html">👈 Go Back</a>
-    <p>Rachel Lim 2023</p>
-  </footer>
+
+    <footer>
+        <div class="footer__nav">
+          <a class="footer__navLink" href="../index.html">👈 Go Back to Home</a>
+          <a class="footer__navLink" href="getting-involved.html">Getting Involved 👉</a>
+        </div>
+        <p class="footer__contact">
+          <a class="footer__contactLink" href="https://www.raclim.cool">Rachel Lim</a> 2023
+        </p>
+      </footer>
 </html>
