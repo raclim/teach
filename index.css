@@ -67,6 +67,12 @@ main p {
     box-shadow: 7px 7px black;
 }
 
+.content__imgLarge {
+    margin:  3% 6%;
+    border: 0.1rem solid black;
+    box-shadow: 7px 7px black;
+}
+
 .workshop__item {
     width: 20%;
     background-color: #fff;
