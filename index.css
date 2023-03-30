@@ -170,3 +170,12 @@ footer {
     text-decoration: underline;
     background-color: purple;
 }
+
+.spacer {
+    padding: 4rem 1rem;
+}
+
+.spacer__list {
+    margin: 6rem;
+}
+
